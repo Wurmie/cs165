@@ -4,6 +4,8 @@ ALL := shellcode.bin target
 
 all: $(ALL)
 
+#$@ is the name of the file being generated, and $< the first prerequisite (usually the source file).
+#Here, $@ = target, $< = target.c
 target: target.c
 	$(CC) $(CFLAGS) -o $@ $<
 

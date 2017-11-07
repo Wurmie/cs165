@@ -8,3 +8,8 @@ Lab2: simple-bof
    - Smashing The Stack For Fun And Profit
      (http://phrack.org/issues/49/14.html)
 
+offset=62
+
+command:
+	cat input | ./target
+
